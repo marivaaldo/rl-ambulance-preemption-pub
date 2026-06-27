@@ -1,0 +1,16 @@
+# Experiment configuration
+total_timesteps: 200000
+seeds: [42, 7]
+eval_episodes: 10
+
+alpha: 1.0   # ambulance transit time weight
+beta: 0.2    # regular traffic delay weight
+
+edge_n_trials: 1000
+cpu_quota: "100%"
+memory_max: "768M"
+
+h2_max_throughput_drop_pct: 5
+h3_max_p95_latency_ms: 50
+
+mlflow_experiment_name: "rl-ambulance-preemption-article"

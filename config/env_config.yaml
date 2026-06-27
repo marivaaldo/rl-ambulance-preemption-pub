@@ -1,0 +1,12 @@
+# SUMO environment parameters
+net_file: "sumo/intersection.net.xml"
+route_file_plain: "sumo/routes_plain.rou.xml"
+route_file_peak: "sumo/routes_peak.rou.xml"
+use_gui: false
+num_seconds: 3600
+min_green: 5
+delta_time: 5
+yellow_time: 3
+green_time: 42
+ambulance_type_id: "ambulance"
+max_ambulance_distance: 200.0

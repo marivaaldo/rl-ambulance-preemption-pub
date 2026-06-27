@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 20">
+  <!-- Vehicle body -->
+  <rect x="0" y="1" width="60" height="18" rx="2" fill="white" stroke="#aaaaaa" stroke-width="1"/>
+  <!-- Windshield (front, right side) -->
+  <rect x="46" y="3" width="10" height="14" rx="1" fill="#aaddff" stroke="#aaaaaa" stroke-width="0.5"/>
+  <!-- Red circle marker on top center -->
+  <circle cx="22" cy="10" r="7" fill="red"/>
+</svg>

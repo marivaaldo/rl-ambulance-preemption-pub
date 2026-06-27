@@ -1,0 +1,16 @@
+# Stable-Baselines3 PPO hyperparameters
+policy: "MlpPolicy"
+learning_rate: 0.0003
+n_steps: 2048
+batch_size: 64
+n_epochs: 10
+gamma: 0.99
+gae_lambda: 0.95
+clip_range: 0.2
+ent_coef: 0.02  # increased from 0.01: encourages exploration given rare ambulance signal
+vf_coef: 0.5
+max_grad_norm: 0.5
+
+# Policy network architecture
+policy_kwargs:
+  net_arch: [64, 64]

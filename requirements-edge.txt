@@ -1,0 +1,16 @@
+# Minimal dependencies for edge inference on Raspberry Pi (CPU-only).
+# SUMO must be installed separately via apt:
+#   sudo apt install sumo sumo-tools
+#   export SUMO_HOME=/usr/share/sumo
+#
+# Install with:
+#   pip install -r requirements-edge.txt
+
+torch==2.12.0
+stable-baselines3==2.8.0
+gymnasium==1.2.3
+sumo-rl==1.4.5
+numpy==2.2.6
+pyyaml==6.0.3
+mlflow-skinny==3.12.0
+scipy==1.15.3

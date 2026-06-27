@@ -1,0 +1,31 @@
+<routes>
+
+    <!-- Vehicle type definitions -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5"
+           minGap="2.5" maxSpeed="13.9" guiShape="passenger" color="0,128,255"/>
+
+    <vType id="ambulance" accel="2.6" decel="4.5" sigma="0.0" length="6"
+           minGap="2.5" maxSpeed="16.7" guiShape="emergency" vClass="emergency"
+           color="255,255,255"/>
+
+    <!-- Route definitions for each direction -->
+    <route id="west_east" edges="A1B1 B1C1"/>
+    <route id="east_west" edges="C1B1 B1A1"/>
+    <route id="north_south" edges="B2B1 B1B0"/>
+    <route id="south_north" edges="B0B1 B1B2"/>
+
+    <!-- Congested car flows: rate 700 vehicles/hour per approach -->
+    <flow id="flow_WE" type="car" route="west_east"
+          begin="0" end="3600" vehsPerHour="700" departLane="best"/>
+    <flow id="flow_EW" type="car" route="east_west"
+          begin="0" end="3600" vehsPerHour="700" departLane="best"/>
+    <flow id="flow_NS" type="car" route="north_south"
+          begin="0" end="3600" vehsPerHour="700" departLane="best"/>
+    <flow id="flow_SN" type="car" route="south_north"
+          begin="0" end="3600" vehsPerHour="700" departLane="best"/>
+
+    <!-- Ambulance appears every 600 seconds from west -->
+    <flow id="flow_ambulance" type="ambulance" route="west_east"
+          begin="300" end="3600" period="600" departLane="best"/>
+
+</routes>
